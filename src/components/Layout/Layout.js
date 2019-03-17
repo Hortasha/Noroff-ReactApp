@@ -13,7 +13,7 @@ const layout = props => (
 			</ul>
 		</nav>
 		<header>
-			<img src="https://i2.wp.com/www.pixelcrumb.com/wp-content/uploads/2016/10/RICK-AND-MORTY-BANNER.jpg?fit=1920%2C720" alt="Rick header" style={{width: "100%"}} />
+			<img src="https://i2.wp.com/www.pixelcrumb.com/wp-content/uploads/2016/10/RICK-AND-MORTY-BANNER.jpg?fit=1920%2C720" alt="Rick header" className="header--img" />
 		</header>
 		<div className="container">
 			{props.children}

@@ -1,0 +1,11 @@
+.CharacterCard {
+    margin-bottom: 30px;
+}
+
+.CharacterCard--title {
+    color: orange;
+}
+
+.CharacterCard--button {
+    margin-top: 20px;
+}

@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import CharacterCard from './../../../components/CharacterCard/CharacterCard';
+import './CardPage.css';
 
 class CardPage extends Component {
     state = {
@@ -40,10 +41,10 @@ class CardPage extends Component {
         }
         return (
             <Fragment>
-                <h4>Selected Character</h4>
+                <h4 className="cardPage--title">Selected Character</h4>
                 <br/>
                 <br/>
-                <div className="row">
+                <div className="row cardPage--container">
                     {characterCard}
                 </div>
             </Fragment>

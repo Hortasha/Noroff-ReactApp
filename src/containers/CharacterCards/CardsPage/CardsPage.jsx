@@ -1,12 +1,14 @@
 import React, { Component, Fragment } from 'react';
 import CharacterCard from '../../../components/CharacterCard/CharacterCard';
 import SearchCard from '../../../components/SearchCard/SearchCard';
+import './CardsPage.css'
 
 class CardsPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            characterCards: []
+            characterCards: [],
+            allCards: []
         }
     }
 
@@ -41,7 +43,6 @@ class CardsPage extends Component {
     }
 
     render() {
-
         let characters = null;
         if(this.state.characterCards.length > 0) {
             characters = this.state.characterCards.map(character => (
@@ -64,11 +65,11 @@ class CardsPage extends Component {
 
         return(
             <Fragment>
-                <h4>characters</h4>
+                <h4 className="cardsPage--title">Characters</h4>
                 <br/>
                 <SearchCard onSearchTerm={this.handleSearchTerm} />
                 <br/>
-                <div className="row">
+                <div className="row cardsPage--container">
                     {characters}
                 </div>
             </Fragment>

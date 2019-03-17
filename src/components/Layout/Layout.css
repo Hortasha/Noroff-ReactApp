@@ -1,7 +1,8 @@
-.navbar {
-	margin-bottom: 25px;
-}
-
 a.active {
 	font-weight: bold;
+}
+
+.header--img {
+	width: 100%;
+	margin-bottom: 50px;
 }
